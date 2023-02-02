@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="project-name">Spli<br>tter</h1>
+    <div class="wrapper">
+      <section class="app-wrap">
+        <!-- Bill and tip selection -->
+        <div class="tip-box">
+          <span class="label">Bill</span>
+          <div class="bill-wrap wrap">
+            <img src="images/icon-dollar.svg" alt="" class="dollar-icon">
+            <input type="text" name="bill" id="" class="bill-tip field">
+          </div>
+          <span class="label">Select Tip %</span>
+          <ul class="tip-percent-wrap">
+            <li class="five">5%</li>
+            <li>10%</li>
+            <li>15%</li>
+            <li>25%</li>
+            <li>50%</li>
+            <li class="custom-tip wrap">
+              <input type="text" name="" placeholder="custom" id="" class="custom-tip-input field">
+            </li>
+          </ul>
+          <div class="details-wrap label">
+            <span>Number of people</span>
+            <span class="alert">Can't be zero</span>
+          </div>
+          <div class="custom-num wrap">
+            <img src="images/icon-person.svg" alt="" class="dollar-icon">
+            <input type="text" name="bill" id="" class="peeps field">
+          </div>
+        </div>
+        <!-- Bill and tip selection ends -->
+
+        <!-- tip amount display -->
+        <div class="tip-outcome tip-box">
+          <div class="tip-outcome_cont">
+            <div class="tip-wrap">
+              <div class="tip-amount">
+                <p>Tip Amount</p>
+                <small>/ person</small>
+              </div>
+              <div class="tip-number">
+                <!-- <span>$</span> -->
+                <p class="tip-digit">0.00</p>
+              </div>
+            </div>
+            <div class="tip-wrap">
+              <div class="tip-amount">
+                <p>Tip Amount</p>
+                <small>/ person</small>
+              </div>
+              <div class="tip-number">
+                <!-- <span>$</span> -->
+                <p class="tip-digit">0.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="btn-div">
+            <button class="check-btn sub-btn">submit</button>
+            <button class="check-btn">Reset</button>
+          </div>
+        </div>
+        <!-- tip amount display ends-->
+      </section>
+    </div>
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
