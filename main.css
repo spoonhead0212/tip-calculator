@@ -39,16 +39,13 @@ main {
     letter-spacing: 2px;
 }
 
-.app-wrap {
-    display: flex;
-    gap: 1rem;
-}
-
 .app-name {
     text-align: center;
 }
 
 .app-wrap {
+    display: flex;
+    gap: 1rem;
     padding: 1.25rem;
     border-radius: 12px;
     width: clamp(375px, 55vw, 1440px);
@@ -88,12 +85,13 @@ main {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.tip-digit {
+.tip-digit, .person-tip-digit {
     font-size: 40px;
     color: var(--Strong-cyan);
 }
 
-.tip-digit::before {
+.tip-digit::before,
+.person-tip-digit::before {
     content: "$";
 }
 
@@ -143,7 +141,7 @@ main {
     width: 100%;
     font-family: var(--main-font);
     color: var(--Very-dark-cyan);
-    padding: 5px;
+    padding: 5px 10px 5px 10px;
     background-color: transparent;
     border: none;
 }
@@ -200,8 +198,12 @@ main {
 }
 
 .alert {
+    display: none;
+}
+
+.show-alert {
+    display: block;
     color: #ef233c;
-    display: hidden;
 }
 
 
@@ -216,5 +218,9 @@ main {
     .app-wrap {
         width: 100%;
         border-radius: 20px 20px 0 0;
+    }
+
+    main {
+        align-items: flex-end;
     }
 }
