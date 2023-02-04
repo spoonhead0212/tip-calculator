@@ -149,4 +149,9 @@ customInput.addEventListener('input', function(){
     }
 })
 
+document.querySelector('.check-btn').addEventListener('click', function(){
+    person.textContent = 0;
+    tipAmountPerPerson.textContent = 0;
+})
+
 
